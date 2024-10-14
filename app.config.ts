@@ -7,7 +7,7 @@ const baseConfig: ExpoConfig = {
   name: 'PickupApp',
   slug: 'PickupApp',
   version: '1.0.0',
-  scheme: 'com.illocale.PickupApp',
+  scheme: 'com.laborit.LaboritUiTest',
   orientation: 'portrait',
   icon: './assets/images/icon.png',
   userInterfaceStyle: 'automatic',
@@ -23,10 +23,10 @@ const baseConfig: ExpoConfig = {
   },
   ios: {
     supportsTablet: true,
-    bundleIdentifier: 'com.illocale.PickupApp',
+    bundleIdentifier: 'com.laborit.LaboritUiTest',
   },
   android: {
-    package: 'com.illocale.PickupApp',
+    package: 'com.laborit.LaboritUiTest',
   },
   web: {
     favicon: './assets/images/favicon.png',

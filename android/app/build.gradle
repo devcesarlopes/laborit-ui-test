@@ -109,9 +109,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.illocale.PickupApp'
+    namespace 'com.laborit.LaboritUiTest'
     defaultConfig {
-        applicationId 'com.illocale.PickupApp'
+        applicationId 'com.laborit.LaboritUiTest'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

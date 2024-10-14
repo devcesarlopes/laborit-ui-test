@@ -1,4 +1,4 @@
-package com.illocale.PickupApp
+package com.laborit.LaboritUiTest
 
 import android.app.Application
 import android.content.res.Configuration

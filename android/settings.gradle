@@ -44,7 +44,7 @@ if (getRNMinorVersion() >= 75) {
   }
 }
 
-rootProject.name = 'PickupApp'
+rootProject.name = 'LaboritUiTest'
 
 dependencyResolutionManagement {
   versionCatalogs {
