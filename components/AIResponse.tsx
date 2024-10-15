@@ -5,9 +5,9 @@ import { useThemeStore } from '@/stores/themeStore';
 import { colorPalettes } from '@/color-theme';
 import CopyIcon from '@/assets/icons/copy.svg';
 import ShareIcon from '@/assets/icons/share.svg';
-import {MarkdownTextInput} from '@expensify/react-native-live-markdown';
 import * as Clipboard from 'expo-clipboard';
 import Toast from "react-native-root-toast";
+import { ThemedText } from './ThemedText';
 
 const AIImage = require('@/assets/images/AI-Icon.png');
 
@@ -61,7 +61,8 @@ const AIResponse: React.FC<AIResponseProps> = ({ response }) => {
             </TouchableOpacity> 
           </View>
         </View>
-        <MarkdownTextInput scrollEnabled={false} multiline={true} className='text-left text-content-text mt-4 font-[urbanist500]'>{response}</MarkdownTextInput>
+        {/* <MarkdownTextInput scrollEnabled={false} multiline={true} className='text-left text-content-text mt-4 font-[urbanist500]'>{response}</MarkdownTextInput> */}
+        <ThemedText type='urbanist500' className='text-left text-content-text mt-4'>{response}</ThemedText>
       </View>
     </View>
   );

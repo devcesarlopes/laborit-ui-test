@@ -15,7 +15,6 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expensify/react-native-live-markdown": "^0.1.170",
     "@expo-google-fonts/poppins": "^0.2.3",
     "@expo-google-fonts/urbanist": "^0.2.3",
     "@expo/vector-icons": "^14.0.2",
