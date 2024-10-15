@@ -8,12 +8,15 @@ import { useUserStore } from "@/stores/userStore";
 import * as SecureStore from 'expo-secure-store';
 import * as WebBrowser from 'expo-web-browser';
 import { Platform } from 'react-native';
+import { colorPalettes } from '@/color-theme';
+import { useThemeStore } from '@/stores/themeStore';
 
 export const useHome = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const setUser = useUserStore(state => state.setUser);
   const saveUser = useUserStore(state => state.saveUser);
+  const {theme} = useThemeStore(state => state);
 
   const handleAuthSession = async (provider: string) => {
     if (loading) {
@@ -79,7 +82,13 @@ export const useHome = () => {
   };
   const authWithFacebook = () => {
     console.log('SW: authWithFacebook called');
-    handleAuthSession('facebook');
+    // handleAuthSession('facebook');
+    Toast.show('Facebook Login is not setup', {
+      duration: Toast.durations.LONG,
+      backgroundColor: theme === 'light' ? colorPalettes.light['--color-content-background'] : colorPalettes.dark['--color-content-background'],
+      textColor: theme === 'light' ? colorPalettes.light['--color-content-text'] : colorPalettes.dark['--color-content-text'],
+      containerStyle: {borderRadius: 20, paddingHorizontal: 40},
+    });
   };
 
   return {

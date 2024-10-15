@@ -29,7 +29,7 @@ export default function Login() {
       <View className='w-full flex-row items-center mx-10'>
         <BackButton/>
       </View>
-      <View className='w-full flex-row items-center justify-center mt-14'>
+      <View className='w-full flex-row items-center justify-center mt-24'>
         <Logo/>
       </View>
       <View className='w-full flex-row items-center justify-center mt-20'>

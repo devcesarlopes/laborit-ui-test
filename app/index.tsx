@@ -23,7 +23,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView className="flex flex-1 bg-background">
-      <View className='w-full flex-row items-center justify-center mt-14'>
+      <View className='w-full flex-row items-center justify-center mt-24'>
         <Logo/>
       </View>
       <View className='w-full flex-row items-center justify-center mt-10'>
